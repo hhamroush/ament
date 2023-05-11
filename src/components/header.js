@@ -9,16 +9,18 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
+import { SocialIcon } from 'react-social-icons'
+
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 //Objects 
 const products = [
 
 
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: SocialIcon },
+  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: SocialIcon },
+  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: SocialIcon },
+  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SocialIcon },
+  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: SocialIcon },
 ]
 const callsToAction = [
 
@@ -38,25 +40,10 @@ export default function Header() {
     <header>
       
         <div className="h-25 mx-auto flex w-100 justify-end p-2 lg:px-5 bg-gray-700 text-white">
-                     <a href="#" target="_blank" className="mx-2">
-                     <i className="fab fa-facebook-f" />
-                     Facebook
-                     </a>
-                     <a href="#" target="_blank" className="mx-2">
-                     Youtube
-                     <i className="fab fa-youtube" />
-                     </a>                     
-                     <a href="#" target="_blank" className="mx-2">
-                     Intagram
-                     <i className="fab fa-instagram" />
-                     </a>
-                     <a
-                     href="https://www.aedin.com/company/ament/mycompany/?viewAsMember=true"
-                     target="_blank" className="mx-2"
-                     >
-                     WhatsApp
-                     <i className="fab fa-aedin-in" />                   
-                     </a>
+            <SocialIcon url="https://www.linkedin.com/company/ament/?viewAsMember=true" style={{ height: 25, width: 25, }} bgColor="black"/>
+            <SocialIcon url="https://www.facebook.com" style={{ height: 25, width: 25, }}/>
+            <SocialIcon url="https://www.whatsapp.com" style={{ height: 25, width: 25, }}/>
+                     
         </div>
 
       <nav className="mx-auto flex w-100 items-center justify-between lg:px-8 text-white bg-black" aria-label="Global">
