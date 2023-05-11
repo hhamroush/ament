@@ -59,7 +59,7 @@ export default function Header() {
                      </a>
         </div>
 
-      <nav className="mx-auto flex w-100 items-center justify-between p-6 lg:px-8 text-white bg-black" aria-label="Global">
+      <nav className="mx-auto flex w-100 items-center justify-between lg:px-8 text-white bg-black" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
@@ -78,18 +78,18 @@ export default function Header() {
         </div>
         {/* THE ENTIRE POP DOWN MENU - Entire popOver group is used for the nav options */}
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold leading-6">
+          <a href="#" className="text-sm font-semibold leading-6 hover:bg-gray-700 p-6">
             Home
           </a>
-          <a href="#" className="text-sm font-semibold leading-6">
+          <a href="#" className="text-sm font-semibold leading-6 hover:bg-gray-700 p-6">
             Overview
           </a>
-          <a href="#" className="text-sm font-semibold leading-6">
+          <a href="#" className="text-sm font-semibold leading-6 hover:bg-gray-700 p-6">
             Services
           </a>
             {/* THat entire Popover is the drop down menu */}
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 hover:bg-gray-700 p-6">
               Products
               <ChevronDownIcon className="h-5 w-5 flex-none" aria-hidden="true" />
             </Popover.Button>
@@ -128,7 +128,7 @@ export default function Header() {
           </Popover>
 
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 hover:bg-gray-700 p-6">
               Projects
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
@@ -167,10 +167,10 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6">
+          <a href="#" className="text-sm font-semibold leading-6 hover:bg-gray-700 p-6">
             Partners
           </a>
-          <a href="#" className="text-sm font-semibold leading-6">
+          <a href="#" className="text-sm font-semibold leading-6 hover:bg-gray-700 p-6">
             Contact Us
           </a>
         </Popover.Group>
