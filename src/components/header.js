@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <header>
       
-        <div className="h-25 mx-auto flex w-100 justify-end p-2 lg:px-5 bg-black text-white">
+        <div className="h-25 mx-auto flex w-100 justify-end p-2 lg:px-5 bg-gray-700 text-white">
                      <a href="#" target="_blank" className="mx-2">
                      <i className="fab fa-facebook-f" />
                      Facebook
@@ -76,7 +76,7 @@ export default function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        {/* THE ENTIRE POP DOWN MENU - Entire popOver group is used for the nav options */}
+        {/* Entire Popover.Group is used for the nav options */}
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <a href="#" className="text-sm font-semibold leading-6 hover:bg-gray-700 p-6">
             Home
@@ -87,7 +87,7 @@ export default function Header() {
           <a href="#" className="text-sm font-semibold leading-6 hover:bg-gray-700 p-6">
             Services
           </a>
-            {/* THat entire Popover is the drop down menu */}
+            {/* THE ENTIRE POP DOWN MENU - entire Popover is the drop down menu */}
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 hover:bg-gray-700 p-6">
               Products
