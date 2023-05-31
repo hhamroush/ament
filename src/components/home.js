@@ -3,9 +3,26 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import Card from './card';
+
+
 export default function Home() {
+    const cardData = [   // Assume you have some card data
+    { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 1', text: 'Card 1 description.' },
+    { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
+    { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
+    { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
+    { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
+    { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
+    { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
+    { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
+    { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
+    { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
+    // Add more card data as needed...
+    ];
+    
     return(
-        <div id='home' className="flex justify-center">
+        <div id='home' className="flex justify-center flex-col">
             <div id='bannerCarousel' className="container ">
             <Carousel autoPlay="true" infiniteLoop="true">
                 <div className="h-64">
@@ -29,8 +46,10 @@ export default function Home() {
             <div id='missionStatement' className="">
 
             </div>
-            <div id='projects' className="">
-
+            <div id='projects' className="flex overflow-x-auto mx-32 mb-5">
+                {cardData.map((card, index) => 
+                <Card key={index} img={card.img} title={card.title} text={card.text} />
+                )}
             </div>
         </div>
     );
