@@ -7,7 +7,7 @@ import Card from './card';
 
 
 export default function Home() {
-    const cardData = [   // Assume you have some card data
+    const cardData = [
     { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 1', text: 'Card 1 description.' },
     { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
     { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
@@ -24,7 +24,7 @@ export default function Home() {
     return(
         <div id='home' className="flex justify-center flex-col">
             <div id='bannerCarousel' className="container ">
-            <Carousel autoPlay="true" infiniteLoop="true">
+            <Carousel autoPlay="true" infiniteLoop="true" showThumbs={false}>
                 <div className="h-64">
                     <img className="object-contain h-64 w-full" src="https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg" />
                    
