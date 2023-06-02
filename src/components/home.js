@@ -23,7 +23,7 @@ export default function Home() {
     
     return(
         <div id='home' className="">
-            <div id='bannerCarousel' className="container">
+            
             <Carousel autoPlay="true" infiniteLoop="true" showThumbs={false}>
                 <div className="h-100">
                     <img className="object-cover w-full" src="/images/electricalProjects.jpg" />
@@ -41,7 +41,7 @@ export default function Home() {
                     <img className="object-contain h-64 w-full" src="https://3.bp.blogspot.com/-aibsl4wFDAg/U230Od4qkeI/AAAAAAAAAKc/9z0UReBblUc/s1600/336490-1680x1050.jpg" />
                 </div>
             </Carousel>
-            </div>
+            
 
             <div id='missionStatement' className="h-50 w-50">
 
