@@ -8,7 +8,7 @@ import Card from './card';
 
 export default function Home() {
     const cardData = [
-    { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 1', text: 'Card 1 description.' },
+    { img: "/images/electricalProjects.jpg", title: 'Electrical Projects', text: 'To find out more click here', link:'https://www.youtube.com/' },
     { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
     { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
     { img: "https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg", title: 'Card 2', text: 'Card 2 description.' },
@@ -22,14 +22,14 @@ export default function Home() {
     ];
     
     return(
-        <div id='home' className="flex justify-center flex-col">
-            <div id='bannerCarousel' className="container ">
+        <div id='home' className="">
+            <div id='bannerCarousel' className="container">
             <Carousel autoPlay="true" infiniteLoop="true" showThumbs={false}>
-                <div className="h-64">
-                    <img className="object-contain h-64 w-full" src="https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede.jpg" />
+                <div className="h-100">
+                    <img className="object-cover w-full" src="/images/electricalProjects.jpg" />
                    
                 </div>
-                <div className="h-64">
+                <div className="h-100">
                     <img className="object-contain h-64 w-full" src="https://www.whizkidsrobotics.com/wp-content/uploads/2015/09/zoomer-dino-robot-dinosaur-toy-roar-1024x575.jpg" />
                     
                 </div>
@@ -43,12 +43,12 @@ export default function Home() {
             </Carousel>
             </div>
 
-            <div id='missionStatement' className="">
+            <div id='missionStatement' className="h-50 w-50">
 
             </div>
             <div id='projects' className="flex overflow-x-auto mx-32 mb-5">
                 {cardData.map((card, index) => 
-                <Card key={index} img={card.img} title={card.title} text={card.text} />
+                <Card key={index} img={card.img} title={card.title} text={card.text} link={card.link} />
                 )}
             </div>
         </div>

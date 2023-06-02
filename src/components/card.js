@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Card({ img, title, text }) {
+export default function Card({ img, title, text, link }) {
   return (
     <div className="flex-shrink-0 m-6 relative overflow-hidden bg-white rounded-lg max-w-xs shadow-lg">
       <div className="relative pt-10 px-10 flex items-center justify-center">
@@ -19,8 +19,9 @@ export default function Card({ img, title, text }) {
         <div className="flex justify-between items-center">
         {/* inner text */}
           <span className="block font-semibold text-xl">
-            {text}
+            {text} 
         </span>
+        <a href={link}>Click ME</a>
         </div>
       </div>
     </div>
