@@ -21,7 +21,7 @@ export default function Card({ img, title, text, link }) {
           <span className="block font-semibold text-xl">
             {text} 
         </span>
-        <a href={link}>Click ME</a>
+        <a href={link}>Click Me</a>
         </div>
       </div>
     </div>

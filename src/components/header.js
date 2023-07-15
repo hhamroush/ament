@@ -16,7 +16,7 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 const products = [
 
 
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: SocialIcon },
+  { name: 'Water & Wastewater Equipment', href: '#', icon: SocialIcon },
   { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: SocialIcon },
   { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: SocialIcon },
   { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SocialIcon },
